@@ -1,21 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="header" class="header">
-      <h1>Weather App</h1>
-      <div class="search" id="search">
-        <input type="text" placeholder="London..." />
-        <button id="searchButton">Search</button>
-      </div>
+        <h1>Weather App</h1>
+        <div class="search" id="search">
+            <input type="text" placeholder="Search for a location..." />
+            <button id="searchButton">Search</button>
+        </div>
     </div>
     <div class="main-container" id="main-container">
-      <h1>hi</h1>
+        <div class="location" id="location">
+            <h2>New York</h2>
+            <img src="./icons/cloudy.png" alt="weather-icon" id="weather-icon" />
+            <div class="temp-row">
+                <p class="high-temp"><span id="high-temp">72</span>°</p>
+                <p class="low-temp"><span id="low-temp">60</span>°</p>
+            </div>
+        </div>
+        <p class="weather-description"><span id="weather-description"><em>Sunny all day.</em></span></p>
+        <h2 class="current-temp"><span id="current-temp">65</span>°</h2>
     </div>
-  </body>
+    <div class="sub-container" id="sub-container">
+        <div class="extra-info" id="extra-info">
+            <div class="extra-info-items">
+                <p><strong>Feels Like:</strong> <span id="feels-like">66</span>°</p>
+            </div>
+            <div class="extra-info-items">
+                <p><strong>Humidity:</strong> <span id="humidity">55</span>%</p>
+            </div>
+            <div class="extra-info-items">
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">10</span> km/h</p>
+            </div>
+            <div class="extra-info-items">
+                <p><strong>Visibility:</strong> <span id="visibility">16</span> km</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>Icons by <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Flaticon</a></p>
+    </div>
+</body>
 </html>
